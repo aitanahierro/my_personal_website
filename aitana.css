@@ -1,0 +1,250 @@
+/* main */
+
+body {
+    font-family: Helvetica Neue;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+}
+
+header {
+    background-color: white;
+    font-family: Helvetica Neue;
+    color: black;
+    padding: 30px;
+    text-align: left;
+    border-bottom: 1px solid black;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Align items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+#homeicon {
+    height: auto; 
+    width: 80px; 
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: black; 
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: #FF42A1; 
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.left-column {
+    width: 40%;
+    padding: 0px;
+}
+
+.right-column {
+    width: 60%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.resume-button,
+.projects-button {
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+    border-radius: 5px; 
+    padding: 10px 20px;
+    margin-right: 10px; 
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.resume-button:hover,
+.projects-button:hover {
+    background-color: #FF42A1;
+    color: white;
+}
+
+.button-container {
+    margin-top: 20px; 
+}
+
+.logo-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap; 
+}
+
+.logo-container img {
+    width: 100px; 
+    height: auto;
+    margin-right: 20px; /* Add spacing between logos */
+    margin-bottom: 20px; /* Add vertical spacing between rows of logos */
+}
+
+
+
+#aitana {
+    max-width: 100%; 
+    height: auto%; 
+    margin: 0;
+    width: 450px;
+}
+
+footer {
+    background-color: #D5D5D5;
+    color: black;
+    text-align: left;
+    font-family: Avenir;
+    font-size: 8pt;
+    padding: 10px;
+    margin: 0; 
+    align-items: center; /* Align items vertically */
+    margin-top: auto;
+}
+
+.logo-container2 {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    margin-top: -30px;
+    margin-right: 40px;
+
+    
+}
+
+.logo-container2 img {
+    width: 30px; 
+    height: auto;
+    margin-left: 10px;
+}
+
+
+/* about */
+about{
+    margin: 20px;
+}
+
+.picscontainer {
+    display: flex;
+    align-items: center;
+}
+
+.picscontainer .left-column img {
+    width: 400px; /* Set a specific width for the images */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; 
+    margin-left: 100px;
+}
+
+
+.about-right-column{
+	width: 60%;
+    padding: 20px;
+    margin-right: 50px; 
+    box-sizing: border-box;}
+
+/* projects */
+
+div.projects {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 20px;
+}
+
+#projectForm {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#projectForm select {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-size: 16px;
+}
+
+.buttonsend {
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.buttonsend:hover {
+    background-color: #FF42A1;
+    color: white;
+}
+
+/* Contact */
+.contact {
+    width: 500px; /* Adjust as needed */
+    margin: 20px auto; /* Center the form horizontally with some top margin */
+    padding: 50px;
+    margin-top: -40px;
+    margin-bottom: -10px;
+}
+
+.contact h2 {
+    text-align: center; /* Center the heading */
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact label {
+    font-weight: bold;
+    text-align: left; /* Align labels to the left */
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: calc(100% - 24px); /* Adjust width to leave space for border */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid black; /* Black border */
+    border-radius: 5px;
+    box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+.contact input[type="submit"] {
+    width: 200px;
+    background-color: #FF42A1; /* Pink background color */
+    color: white; /* White text color */
+    border: 3px solid #FF42A1; /* Pink border */
+    border-radius: 2px; /* Add border radius */
+    padding: 10px 20px; /* Adjust padding */
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px; /* Add margin to separate from input fields */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+    display: block; /* Ensure block-level display */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.contact input[type="submit"]:hover {
+    background-color: white; /* White background color on hover */
+    color: black; /* Black text color on hover */
+    border-color: black; /* Black border color on hover */
+}
+
